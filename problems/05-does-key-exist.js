@@ -12,7 +12,15 @@ doesKeyExist(obj1, 'name'); // => false
 
 function doesKeyExist(obj, key) {
   // Your code here
+  // let arr = Object.keys(obj)
+  // console.log(arr.indexOf(key) > -1)
+  // console.log(obj[key] !== undefined)
+  return key in obj;
+
 }
 
+let obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
+console.log(doesKeyExist(obj1, 'course')); // => true
+console.log(doesKeyExist(obj1, 'name')); // => false
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = doesKeyExist;

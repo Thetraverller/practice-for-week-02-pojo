@@ -15,7 +15,9 @@ function doesKeyExist(obj, key) {
   // let arr = Object.keys(obj)
   // console.log(arr.indexOf(key) > -1)
   // console.log(obj[key] !== undefined)
-  return key in obj;
+  // return key in obj;
+  
+  return key in obj
 
 }
 

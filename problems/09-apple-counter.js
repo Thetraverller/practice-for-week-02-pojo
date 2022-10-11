@@ -42,7 +42,17 @@ function appleCounter(appleObj) {
 //   })
 //   return count
 // }
-let count = 0
+// let count = 0
+
+//   let keys = Object.keys(appleObj)
+//   for (let el of keys) {
+//     let word = el.toLowerCase()
+//     if (word.includes("apple")) {
+//       count++
+//     }
+//   }
+//   return count
+
 
   let keys = Object.keys(appleObj)
   for (let el of keys) {

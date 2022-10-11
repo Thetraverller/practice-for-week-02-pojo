@@ -22,16 +22,22 @@ function valuesInObject(obj) {
   //   let value = obj[key]
   //   arr.push(value)
   // }
-  // console.log(arr)
+  // return arr
 
   //#M2
-  console.log(Object.values(obj))
+  // return Object.values(obj)
+  let arr = []
+  for (let key in obj) {
+    let value = obj[key]
+    arr.push(value)
+  }
+  return arr
 }
 
 let animals = {dog: "Wolfie", cat: "Jet", bison: "Bilbo"}
 let foods = {apple: "tart", lemon: "sour", mango: "sweet"}
-valuesInObject(animals); // => ["Wolfie", "Jet", "Bilbo"]
-valuesInObject(foods); // => ["tart", "sour", "sweet"]
+console.log(valuesInObject(animals)); // => ["Wolfie", "Jet", "Bilbo"]
+console.log(valuesInObject(foods)); // => ["tart", "sour", "sweet"]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = valuesInObject;

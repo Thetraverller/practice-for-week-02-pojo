@@ -29,12 +29,19 @@ function keyInObjectArray(objArray, keyString) {
 
 //   return false;
 // }
- for (let el of objArray) {
-  if (keyString in el) {
-    return true
+//  for (let el of objArray) {
+//   if (keyString in el) {
+//     return true
+//   }
+//  }
+//  return false
+
+  for (let obj of objArray) {
+    if (keyString in obj) {
+      return true
+    }
   }
- }
- return false
+  return false
 }
 
 let objArray = [

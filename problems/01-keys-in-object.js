@@ -16,20 +16,26 @@ function keysInObject(obj) {
   // Your code here
   // #for...in method
 
+  // let array = []
+  // for (let key in obj) {
+  //    array.push(key);
+  // }
+  // return array
+//#method 2
+  // return Object.keys(obj)
+
   let array = []
   for (let key in obj) {
-     array.push(key);
+    array.push(key)
   }
-  console.log(array)
-//#method 2
-  // console.log(Object.keys(obj))
+  return array
 }
 
 
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
 let foods = {apple: 'tart', lemon: 'sour', mango: 'sweet'}
-keysInObject(animals); // => ["dog", "cat", "bison"]
-keysInObject(foods); // => ["apple", "lemon", "mango"]
+console.log(keysInObject(animals)); // => ["dog", "cat", "bison"]
+console.log(keysInObject(foods)); // => ["apple", "lemon", "mango"]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keysInObject;

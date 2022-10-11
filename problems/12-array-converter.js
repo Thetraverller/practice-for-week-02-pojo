@@ -24,12 +24,21 @@ function arrayConverter(array) {
 //   return obj;
 // }
 
+  // let obj = { }
+
+  // array.forEach(function(value) {
+  //   if (obj[value] === undefined) {   // if value is not yet in obj give a value of 1
+  //     obj[value] = 1;
+  //   } else {obj[value]++}            // else increase by one each time it is in the array
+  // })
+  // return obj};
+
   let obj = { }
 
-  array.forEach(function(value) {
-    if (obj[value] === undefined) {   // if value is not yet in obj give a value of 1
-      obj[value] = 1;
-    } else {obj[value]++}            // else increase by one each time it is in the array
+  array.forEach( value => {
+    if (obj[value] === undefined) {
+      obj[value] = 1
+    } else {obj[value]++}
   })
   return obj};
 

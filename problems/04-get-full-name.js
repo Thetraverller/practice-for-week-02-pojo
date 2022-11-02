@@ -17,7 +17,7 @@ function getFullName(person) {
   // //#m2
   // return person["firstName"] + " " + person["lastName"]
 
-  return person["firstName"] + " " + person["lastName"]
+  return `${person.firstName} ${person.lastName}`
 }
 
 let p1 = {firstName: 'John', lastName: 'Doe'};

@@ -26,7 +26,8 @@ function valuesInObject(obj) {
 
   //#M2
   // return Object.values(obj)
-  let arr = []
+
+  let arr = [ ]
   for (let key in obj) {
     let value = obj[key]
     arr.push(value)

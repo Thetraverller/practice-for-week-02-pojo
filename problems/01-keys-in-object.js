@@ -24,7 +24,8 @@ function keysInObject(obj) {
 //#method 2
   // return Object.keys(obj)
 
-  let array = []
+
+  let array = [ ]
   for (let key in obj) {
     array.push(key)
   }

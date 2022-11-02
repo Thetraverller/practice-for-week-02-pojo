@@ -15,15 +15,11 @@ setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 
 function setKeyInObject(obj, string, value) {
   // Your code here
-  //#m1
-      // obj.string = value
-      // return obj
-  //#m2
-    //   obj[string] = value
-    //   return obj
-    obj[string] = value  //string is the key
-    return obj
+  // obj[string] = value  //string is the key
+  // return obj
 
+    obj[string] = value
+    return obj
 }
 let obj = {}
 console.log(setKeyInObject(obj, "apple", "yum")); // => {apple: "yum"}

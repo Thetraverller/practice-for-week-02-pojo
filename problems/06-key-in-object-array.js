@@ -21,23 +21,15 @@ keyInObjectArray(objArray, 'animal'); // => false
 
 function keyInObjectArray(objArray, keyString) {
   // Your code here
-//   for (let el of objArray) {
-//     if (keyString in el) {
-//       return true;
-//     }
-//   }
-
-//   return false;
-// }
-//  for (let el of objArray) {
-//   if (keyString in el) {
-//     return true
-//   }
-//  }
-//  return false
+  // for (let obj of objArray) {
+  //   if (keyString in obj) {
+  //     return true
+  //   }
+  // }
+  // return false
 
   for (let obj of objArray) {
-    if (keyString in obj) {
+    if(keyString in obj) {
       return true
     }
   }

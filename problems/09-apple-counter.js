@@ -31,37 +31,26 @@ appleCounter(obj3); // => 3
 function appleCounter(appleObj) {
   // Your code here
 
-//   let count = 0
+  // let count = 0
 
-//   let keys = Object.keys(appleObj)
-//   keys.forEach(function(el) {
-//     let word = el.toLowerCase()
-//     if (word.includes("apple")) {
-//       count++
-//     }
-//   })
-//   return count
-// }
-// let count = 0
+  // let keys = Object.keys(appleObj)  //create array of keys
+  // for (let el of keys) {            //iterate through array of keys
+  //   let word = el.toLowerCase()
+  //   if (word.includes("apple")) {
+  //     count++
+  //   }
+  // }
+  // return count
 
-//   let keys = Object.keys(appleObj)
-//   for (let el of keys) {
-//     let word = el.toLowerCase()
-//     if (word.includes("apple")) {
-//       count++
-//     }
-//   }
-//   return count
-
+  let count = 0
 
   let keys = Object.keys(appleObj)
-  for (let el of keys) {
-    let word = el.toLowerCase()
-    if (word.includes("apple")) {
-      count++
+    for(let string of keys) {
+      if(string.toLowerCase().includes("apple")) {
+        count++
+      }
     }
-  }
-  return count
+    return count
 }
 
 let obj = { banana: "yay!" };
